@@ -123,11 +123,6 @@ function tabulate() {
     <p>Unanswered: ${unanswered}</p>`;
     
     $("#quiz").html(resultstext);
-    // $("#correct").text(correct);
-    // $("#incorrect").text(incorrect);
-    // $("#unanswered").text(unanswered);
-    // document.getElementById("quiz").style.visibility = "hidden";
-    // document.getElementById("results").style.visibility = "visible";
 
     
 }

@@ -11,7 +11,8 @@
 </head>
 <body>
 <!-- 3 divs: one for title, one for start button initially (both visible initially) -->
-<div class="title">Netrunner Runner Quiz</div>
+<div id="cotainer">
+<div class="title"><h1>Netrunner Runner Quiz</h1></div>
 <div id="start">
     <!-- button when pressed makes .start invsible, makes .quiz visible, and starts timer -->
     <button id="startbtn">Start</button>
@@ -31,6 +32,7 @@
         <input type = "radio" class = "qq" name = "question1" value = "AliceMerchant">Alice Merchant
         <input type = "radio" class = "qq" name = "question1" value = "Gnat">Gnat
         <p></p>
+        <br>
         <p>
             <img class="pic" src="./assets/images/q2.jpg">
         </p>
@@ -39,6 +41,7 @@
         <input type = "radio" class = "qq" name = "question2" value = "Kit">Reille "Kit" Peddler
         <input type = "radio" class = "qq" name = "question2" value = "Val">Valencia Estevez
         <p></p>
+        <br>
         <p>
             <img class="pic" src="./assets/images/q3.jpg">
         </p>
@@ -47,6 +50,7 @@
         <input type = "radio" class = "qq" name = "question3" value = "Leela">Leela Patel
         <input type = "radio" class = "qq" name = "question3" value = "Ayla">Ayla "BIOS" Rahim
         <p></p>
+        <br>
         <p>
             <img class="pic" src="./assets/images/q4.jpg">
         </p>
@@ -54,7 +58,8 @@
         <input type = "radio" class = "qq" name = "question4" value = "Andromeda">Andromeda
         <input type = "radio" class = "qq" name = "question4" value = "Elizabeth">Elizabeth Mills
         <input type = "radio" class = "qq" name = "question4" value = "Kabonesa">Kabonesa Wu
-        <p></p>    
+        <p></p>
+        <br>    
         <p>
             <img class="pic" src="./assets/images/q5.jpg">
         </p>
@@ -63,6 +68,7 @@
         <input type = "radio" class = "qq" name = "question5" value = "Iain">Iain Stirling
         <input type = "radio" class = "qq" name = "question5" value = "Null">Null
         <p></p>
+        <br>
         <p>
             <img class="pic" src="./assets/images/q6.jpg">
         </p>
@@ -71,6 +77,7 @@
         <input type = "radio" class = "qq" name = "question6" value = "Exile">Exile
         <input type = "radio" class = "qq" name = "question6" value = "Khan">Khan
         <p></p>
+        <br>
         <p>
             <img class="pic" src="./assets/images/q7.jpg">
         </p>
@@ -79,6 +86,7 @@
         <input type = "radio" class = "qq" name = "question7" value = "AliceMerchant">Alice Merchant
         <input type = "radio" class = "qq" name = "question7" value = "Kit">Reille "Kit" Peddler
         <p></p>
+        <br>
         <p>
             <img class="pic" src="./assets/images/q8.jpg">
         </p>
@@ -90,20 +98,8 @@
         <input id = "submitbtn" type = "button" value = "Done!" onclick = "tabulate();">
 
     </form>
-
 </div>
-<!-- <div id="results">
-    <h2>All Done!</h2>
-    <p>
-        Correct answers: <span id="correct">0</span>
-    </p>
-    <p>
-        Incorrect answers: <span id="incorrect">0</span>
-    </p>
-    <p>
-        Unanswered: <span id="unanswered">0</span>
-    </p>
-</div> -->
+</div>
 
 
 
