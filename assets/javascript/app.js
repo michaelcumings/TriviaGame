@@ -4,13 +4,13 @@ window.onload = function() {
     $("#startbtn").on("click", timer.start);
   };
 
-//  Variable that will hold our setInterval that runs the stopwatch
+//  Variable that will hold our setInterval that runs the timer
 var intervalId;
 
 // prevents the clock from being sped up unnecessarily
 var clockRunning = false;
 
-// Our stopwatch object
+// Our timer object
 var timer = {
 
   time: 0,
