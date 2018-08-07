@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <title>Quiz</title>
+</head>
+<body>
+<!-- 3 divs: one for title, one for start button initially (both visible initially) -->
+<div class="title">Netrunner Runner Quiz</div>
+<div id="start">
+    <!-- button when pressed makes .start invsible, makes .quiz visible, and starts timer -->
+    <button id="startbtn">Start</button>
+</div>
+
+<!-- One div for timer and quiz questions, later for results (invisible initially) -->
+<div id="quiz">
+    <!-- A nested "seconds" div just for the current timer value -->
+    <h2>Time Remaining: <span id="seconds">45</span> Seconds</h2>
+    <h3>Which name corresponds to the pictured runner?</h3>
+    <form id = "quizqns" name = "quizqns">
+        <p>
+            <img class="pic" src="./assets/images/q1.jpg">
+        </p>
+        <input type = "radio" class = "qq" name = "question1" value = "ChaosTheory">Chaos Theory
+        <input type = "radio" class = "qq" name = "question1" value = "FreedomKhumalo">Freedom Khumalo
+        <input type = "radio" class = "qq" name = "question1" value = "AliceMerchant">Alice Merchant
+        <input type = "radio" class = "qq" name = "question1" value = "Gnat">Gnat
+        <p></p>
+        <p>
+            <img class="pic" src="./assets/images/q2.jpg">
+        </p>
+        <input type = "radio" class = "qq" name = "question2" value = "ChaosTheory">Chaos Theory
+        <input type = "radio" class = "qq" name = "question2" value = "Caprice">Caprice Nisei
+        <input type = "radio" class = "qq" name = "question2" value = "Kit">Reille "Kit" Peddler
+        <input type = "radio" class = "qq" name = "question2" value = "Val">Valencia Estevez
+        <p></p>
+        <p>
+            <img class="pic" src="./assets/images/q3.jpg">
+        </p>
+        <input type = "radio" class = "qq" name = "question3" value = "Val">Valencia Estevez
+        <input type = "radio" class = "qq" name = "question3" value = "Reina">Reina Roja
+        <input type = "radio" class = "qq" name = "question3" value = "Leela">Leela Patel
+        <input type = "radio" class = "qq" name = "question3" value = "Ayla">Ayla "BIOS" Rahim
+        <p></p>
+        <p>
+            <img class="pic" src="./assets/images/q4.jpg">
+        </p>
+        <input type = "radio" class = "qq" name = "question4" value = "Hayley">Hayley Kaplan 
+        <input type = "radio" class = "qq" name = "question4" value = "Andromeda">Andromeda
+        <input type = "radio" class = "qq" name = "question4" value = "Elizabeth">Elizabeth Mills
+        <input type = "radio" class = "qq" name = "question4" value = "Kabonesa">Kabonesa Wu
+        <p></p>    
+        <p>
+            <img class="pic" src="./assets/images/q5.jpg">
+        </p>
+        <input type = "radio" class = "qq" name = "question5" value = "FreedomKhumalo">Freedom Khumalo
+        <input type = "radio" class = "qq" name = "question5" value = "419">419
+        <input type = "radio" class = "qq" name = "question5" value = "Iain">Iain Stirling
+        <input type = "radio" class = "qq" name = "question5" value = "Null">Null
+        <p></p>
+        <p>
+            <img class="pic" src="./assets/images/q6.jpg">
+        </p>
+        <input type = "radio" class = "qq" name = "question6" value = "Caprice">Caprice Nisei
+        <input type = "radio" class = "qq" name = "question6" value = "Kate">Kate "Mac" MacCafferty
+        <input type = "radio" class = "qq" name = "question6" value = "Exile">Exile
+        <input type = "radio" class = "qq" name = "question6" value = "Khan">Khan
+        <p></p>
+        <p>
+            <img class="pic" src="./assets/images/q7.jpg">
+        </p>
+        <input type = "radio" class = "qq" name = "question7" value = "Caprice">Caprice Nisei
+        <input type = "radio" class = "qq" name = "question7" value = "Maxx">Maxx
+        <input type = "radio" class = "qq" name = "question7" value = "AliceMerchant">Alice Merchant
+        <input type = "radio" class = "qq" name = "question7" value = "Kit">Reille "Kit" Peddler
+        <p></p>
+        <p>
+            <img class="pic" src="./assets/images/q8.jpg">
+        </p>
+        <input type = "radio" class = "qq" name = "question8" value = "ChaosTheory">Chaos Theory
+        <input type = "radio" class = "qq" name = "question8" value = "Steve">Steve Cambridge
+        <input type = "radio" class = "qq" name = "question8" value = "Omar">Omar Keung
+        <input type = "radio" class = "qq" name = "question8" value = "Noise">Noise
+        <p></p>
+        <input id = "submitbtn" type = "button" value = "Done!" onclick = "tabulate();">
+
+    </form>
+
+</div>
+<!-- <div id="results">
+    <h2>All Done!</h2>
+    <p>
+        Correct answers: <span id="correct">0</span>
+    </p>
+    <p>
+        Incorrect answers: <span id="incorrect">0</span>
+    </p>
+    <p>
+        Unanswered: <span id="unanswered">0</span>
+    </p>
+</div> -->
+
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Script -->
+<script type="text/javascript" src="./assets/javascript/app.js"></script>
+</body>
+</html>

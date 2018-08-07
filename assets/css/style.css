@@ -1,0 +1,11 @@
+#start {
+    visibility: visible;
+}
+
+#quiz {
+    visibility: hidden;
+}
+
+#results {
+    visibility: hidden;
+}
